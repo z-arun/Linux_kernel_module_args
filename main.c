@@ -13,13 +13,13 @@ MODULE_PARM_DESC(argument,"test int parameter");
 
 int __init startFun(void)
 {
-	printk(KERN_INFO "Hello world %d",argument);
+	printk(KERN_INFO "\nHello world %d \n",argument);
 	return 0;
 }
 
 void __exit endFun(void)
 {
-	printk(KERN_INFO "bye world");
+	printk(KERN_INFO "\nbye world\n");
 }
 
 module_init(startFun);
